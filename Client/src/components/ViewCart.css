@@ -1,0 +1,81 @@
+/* General Styles */
+.view-cart-container {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.cart-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100px;
+  border-radius: 8px;
+}
+
+/* Button styles */
+.btn {
+  font-size: 0.875rem; /* Adjusted font size */
+  margin-top: 20px;
+}
+
+.place-order-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit-order-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.empty-cart-message {
+  margin-top: 50px;
+  font-size: 1.5rem; /* Adjusted font size */
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+  .cart-title {
+      font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  .product-image {
+      width: 80px; /* Smaller image size for mobile */
+  }
+
+  .btn {
+      font-size: 0.75rem; /* Smaller font size for mobile buttons */
+  }
+
+  .empty-cart-message {
+      font-size: 1.25rem; /* Smaller font size for mobile empty cart message */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .cart-title {
+      font-size: 1.375rem; /* Slightly larger font size for tablets */
+  }
+
+  .product-image {
+      width: 90px; /* Adjusted image size for tablets */
+  }
+
+  .btn {
+      font-size: 0.825rem; /* Adjusted font size for tablets */
+  }
+
+  .empty-cart-message {
+      font-size: 1.375rem; /* Adjusted font size for tablets */
+  }
+}

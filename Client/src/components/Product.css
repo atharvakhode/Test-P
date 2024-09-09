@@ -1,0 +1,95 @@
+.product-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  margin: 15px 0;
+  padding: 20px 0px;
+  border: 1px solid lightgray;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* This will change the button color when the card is hovered */
+.product-card:hover .btn-danger {
+  background-color: #007bff !important;
+  color: #fff;
+  border: 1px solid #007bff !important;
+}
+
+.description-prod {
+  border-bottom: 1px solid #d5d5d5; /* Subtle solid border */
+  padding-bottom: 10px; /* Add some spacing below the border */
+}
+
+.product-img {
+  text-align: center;
+  width: 100%;
+  height: 10em;
+  position: relative;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-category {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: rgb(63, 81, 181);
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.btn-danger {
+  background-color: #fff !important;
+  color: #8e8e8e;
+  border: 1px solid #8e8e8e !important;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+}
+
+.out-of-stock-text {
+  color: red;
+  padding-top: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.img-thumbnail{
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+}
+
+.btn-cart {
+  background-color: #fff !important;
+  color: #8e8e8e;
+  border: 1px solid #8e8e8e !important;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  font-weight: 'bold'
+}
+
+.product-card:hover .btn-cart {
+  background-color: #007bff !important;
+  color: #fff;
+  border: 1px solid #007bff !important;
+}

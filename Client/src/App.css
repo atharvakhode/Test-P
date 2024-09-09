@@ -1,0 +1,125 @@
+:root {
+  --ast-global-color-0: #2139ee;
+  --ast-global-color-1: #01a7ff;
+  --ast-global-color-2: #242a56;
+  --ast-global-color-3: #393a56;
+  --ast-global-color-4: #eff2ff;
+  --ast-global-color-5: #FFFFFF;
+  --ast-global-color-6: #eff2ff;
+  --ast-global-color-7: #fbfcff;
+  --ast-global-color-8: #bfd1ff;
+}
+
+.main-container{
+  background-color: #F7F7F7;
+
+}
+
+/* body{
+  background-image: url('./assets/bg.png') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F7F7F7;
+  z-index: 9999;
+} */
+
+/* App.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+
+.wdt{    
+    width: 90% !important;    
+}    
+.img    
+{    
+    height: 400px !important;    
+    width: 100vw;    
+} 
+.slick-next{
+    right: 20px!important;;
+    z-index: 1100;
+}
+
+.slick-prev{
+    left: 0!important;;
+    z-index: 1100;
+}
+
+.slick-next::before,.slick-prev::before{
+    font-size: 40px!important;
+    
+}
+.pagination {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .pagination li{
+      display: inline-block;
+      min-width: 50px;
+      margin-right: 10px;
+
+  }
+  
+  .pagination a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    width: 100%;
+    text-align: center;    
+    border: 0px solid #ffffff00;
+    color: #00000050;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    user-select: none;
+  }
+  .pagination a:hover{
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.33)
+  }
+  
+  .pagination__link {
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .pagination__link--active a {
+    color: #fff;
+    background: #0000006d;
+  }
+  
+  .pagination__link--disabled a {
+    color: rgb(255, 255, 255);
+    border: 0px solid rgba(198, 197, 202, 0);
+    background-color: rgba(255, 255, 255, 0.315);
+  }
+
+  .pagination__link--disabled:hover a {
+    background-color: rgba(0, 0, 0, 0.385)
+  }
+
+  .min_height{
+    min-height: 1vh;
+  }
+
+  

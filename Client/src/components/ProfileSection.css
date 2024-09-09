@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .card {
+      padding: 1rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      padding: 0.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group {
+      margin-bottom: 0.75rem;
+    }
+  }
+  

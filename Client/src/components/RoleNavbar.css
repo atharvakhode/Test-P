@@ -1,0 +1,28 @@
+
+.nav-link-hover {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    margin: auto 5px;
+}
+
+.nav-link-hover::after {
+    margin-left: 5px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust based on your design */
+    width: 0;
+    height: 2px;
+    color: #007bff;
+    background-color: #007bff; /* Adjust the color as needed */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link-hover:hover::after, .nav-link-hover.active::after {
+    width: 90%;
+  }
+
+  .nav-link-hover.active {
+    color: #007bff; /* Optional: change text color when active */
+  }

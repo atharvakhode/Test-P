@@ -1,0 +1,13 @@
+.custom-style {
+    background-color: #eff2ff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .custom-style {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  }
