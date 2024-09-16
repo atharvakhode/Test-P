@@ -8,7 +8,8 @@ require('express-async-errors');
 
 app.use(express.json()); // JSON parsing for other routes
 const _dirname = path.dirname('');
-const buildPath = path.join(_dirname,"../Client/build")
+// const buildPath = path.join(_dirname,"../Client/build")
+const buildPath = path.resolve(__dirname, "../Client/build");
 app.use(express.static(buildPath))
 
 const authMiddleware = require('./middleware/authentication');
@@ -53,7 +54,7 @@ app.use(helmet({
 
 // Updated CORS configuration
 const corsOptions = {
-  origin: ['https://pine-vox-front.vercel.app', 'http://localhost:3006','https://myaccount.pinevox.com', 'http://myaccount.pinevox.com', process.env.VM_FrontendURL],
+  origin: ['https://pine-vox-front.vercel.app', 'http://localhost:3000','https://myaccount.pinevox.com', 'http://myaccount.pinevox.com', process.env.VM_FrontendURL],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
@@ -87,9 +88,9 @@ app.use('/api/v1/coupon', couponRouter);
 // app.use(express.static(path.join(__dirname, '../Client/build')));
 
 // // Catch-all route for the React app
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../Client/build/index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
+});
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
